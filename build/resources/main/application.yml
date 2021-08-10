@@ -1,0 +1,12 @@
+micronaut:
+  application:
+    name: projetoExemploMicronaut
+datasources:
+  default:
+    url: jdbc:mysql://localhost:3306/exemplo_micronaut?createDatabaseIfNotExist=true&useTimezone=true&serverTimezone=UTC
+    driverClassName: com.mysql.cj.jdbc.Driver
+    username: root
+    password: D4rrow.Lyk0s
+    schema-generate: CREATE_DROP
+    dialect: org.hibernate.dialect.MySQLInnoDBDialect
+jpa.default.properties.hibernate.hbm2ddl.auto: update
