@@ -25,7 +25,7 @@ class AutorController(val autorRepository: AutorRepository,
         return HttpResponse.ok(resposta)
     }
 
-    @Post(consumes = [MediaType.APPLICATION_XML])
+    @Post(produces = [MediaType.APPLICATION_XML], consumes = [MediaType.APPLICATION_XML])
     @Transactional
     fun cadastra(@Body @Valid request: NovoAutorRequest) : HttpResponse<Any>
     {
@@ -42,7 +42,7 @@ class AutorController(val autorRepository: AutorRepository,
         val uri = UriBuilder.of("/autores/{id}")
             .expand(mutableMapOf(Pair("id", autor.id)))
 
-        return HttpResponse.created(uri)
+        return HttpResponse.created<Any?>(uri).body(autor)
     }
 
     @Put("/{id}")
