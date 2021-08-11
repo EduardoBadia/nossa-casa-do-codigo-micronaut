@@ -19,7 +19,7 @@ public class AutorController {
     
     @org.jetbrains.annotations.NotNull
     @javax.transaction.Transactional
-    @io.micronaut.http.annotation.Post
+    @io.micronaut.http.annotation.Post(consumes = {"application/xml"})
     public io.micronaut.http.HttpResponse<java.lang.Object> cadastra(@org.jetbrains.annotations.NotNull
     @javax.validation.Valid
     @io.micronaut.http.annotation.Body

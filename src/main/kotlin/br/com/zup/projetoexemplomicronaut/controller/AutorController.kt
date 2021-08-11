@@ -5,6 +5,7 @@ import br.com.zup.projetoexemplomicronaut.repository.AutorRepository
 import br.com.zup.projetoexemplomicronaut.controller.response.AutorResponse
 import br.com.zup.projetoexemplomicronaut.request.NovoAutorRequest
 import io.micronaut.http.HttpResponse
+import io.micronaut.http.MediaType
 import io.micronaut.http.annotation.*
 import io.micronaut.http.uri.UriBuilder
 import javax.transaction.Transactional
@@ -24,7 +25,7 @@ class AutorController(val autorRepository: AutorRepository,
         return HttpResponse.ok(resposta)
     }
 
-    @Post
+    @Post(consumes = [MediaType.APPLICATION_XML])
     @Transactional
     fun cadastra(@Body @Valid request: NovoAutorRequest) : HttpResponse<Any>
     {
