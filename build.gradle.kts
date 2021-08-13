@@ -45,8 +45,11 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:${kotlinVersion}")
     runtimeOnly("ch.qos.logback:logback-classic")
     runtimeOnly("mysql:mysql-connector-java")
+    testImplementation("org.mockito:mockito-core:3.11.2")
     testImplementation("org.testcontainers:junit-jupiter")
-    testImplementation("org.testcontainers:mysql")
+    testImplementation("io.micronaut.test:micronaut-test-junit5:2.3.7")
+    // pode ser que a dependência acima do micronaut test não seja necessária
+    testImplementation("org.testcontainers:mysql:1.16.0")
     testImplementation("org.testcontainers:testcontainers")
     implementation("io.micronaut:micronaut-validation")
     implementation("io.micronaut.xml:micronaut-jackson-xml")

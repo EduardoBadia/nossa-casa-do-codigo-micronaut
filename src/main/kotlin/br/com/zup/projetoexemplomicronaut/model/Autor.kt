@@ -12,7 +12,7 @@ import javax.persistence.Id
 class Autor(val nome: String,
             val email: String,
             var descricao: String,
-            @field:Embedded val endereco: Endereco) {
+            @field:Embedded val endereco: Endereco?) {
 
     @Id
     @GeneratedValue

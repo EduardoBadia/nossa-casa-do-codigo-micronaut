@@ -1,5 +1,6 @@
 package br.com.zup.projetoexemplomicronaut.request
 
+import br.com.zup.projetoexemplomicronaut.annotation.Cep
 import br.com.zup.projetoexemplomicronaut.controller.response.EnderecoResponse
 import br.com.zup.projetoexemplomicronaut.model.Autor
 import br.com.zup.projetoexemplomicronaut.model.Endereco
@@ -13,7 +14,7 @@ data class NovoAutorRequest
         (@field:NotBlank val nome: String,
          @field:NotBlank @field:Email val email: String,
          @field:NotBlank @field:Size(max = 400) val descricao: String,
-         @field:NotBlank val cep: String,
+         @field:NotBlank @field:Cep val cep: String,
          @field:NotBlank val numero: String) {
 
             fun paraAutor(enderecoResponse: EnderecoResponse): Autor

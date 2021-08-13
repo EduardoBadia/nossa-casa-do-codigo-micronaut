@@ -17,6 +17,7 @@ public final class NovoAutorRequest {
     @javax.validation.constraints.NotBlank
     private final java.lang.String descricao = null;
     @org.jetbrains.annotations.NotNull
+    @br.com.zup.projetoexemplomicronaut.annotation.Cep
     @javax.validation.constraints.NotBlank
     private final java.lang.String cep = null;
     @org.jetbrains.annotations.NotNull
