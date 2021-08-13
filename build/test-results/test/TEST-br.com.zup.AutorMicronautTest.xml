@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="br.com.zup.AutorMicronautTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-08-13T14:11:22" hostname="ZUP-8051" time="1.979">
+<testsuite name="br.com.zup.AutorMicronautTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-08-13T14:47:29" hostname="ZUP-8051" time="2.439">
   <properties/>
-  <testcase name="deveBuscarUmAutorQuandoUmEmailValidoEhInformado$projeto_exemplo_micronaut()" classname="br.com.zup.AutorMicronautTest" time="1.783"/>
-  <testcase name="deveCadastrarUmNovoAutor$projeto_exemplo_micronaut()" classname="br.com.zup.AutorMicronautTest" time="0.195"/>
-  <system-out><![CDATA[?[36m11:10:56.513?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mi.m.context.env.DefaultEnvironment?[0;39m - Established active environments: [test]
-?[36m11:10:57.708?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mcom.zaxxer.hikari.HikariDataSource?[0;39m - HikariPool-1 - Starting...
-?[36m11:10:57.780?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mo.t.d.DockerClientProviderStrategy?[0;39m - Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
-?[36m11:10:58.273?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mo.t.d.DockerClientProviderStrategy?[0;39m - Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
-?[36m11:10:58.274?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mo.testcontainers.DockerClientFactory?[0;39m - Docker host IP address is localhost
-?[36m11:10:58.310?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mo.testcontainers.DockerClientFactory?[0;39m - Connected to docker: 
+  <testcase name="deveBuscarUmAutorQuandoUmEmailValidoEhInformado$projeto_exemplo_micronaut()" classname="br.com.zup.AutorMicronautTest" time="2.206"/>
+  <testcase name="deveCadastrarUmNovoAutor$projeto_exemplo_micronaut()" classname="br.com.zup.AutorMicronautTest" time="0.232"/>
+  <system-out><![CDATA[?[36m11:47:03.304?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mi.m.context.env.DefaultEnvironment?[0;39m - Established active environments: [test]
+?[36m11:47:04.819?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mcom.zaxxer.hikari.HikariDataSource?[0;39m - HikariPool-1 - Starting...
+?[36m11:47:05.002?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mo.t.d.DockerClientProviderStrategy?[0;39m - Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+?[36m11:47:05.950?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mo.t.d.DockerClientProviderStrategy?[0;39m - Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
+?[36m11:47:05.952?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mo.testcontainers.DockerClientFactory?[0;39m - Docker host IP address is localhost
+?[36m11:47:05.993?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mo.testcontainers.DockerClientFactory?[0;39m - Connected to docker: 
   Server Version: 20.10.7
   API Version: 1.41
   Operating System: Docker Desktop
   Total Memory: 12518 MB
-?[36m11:10:58.314?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mo.t.utility.ImageNameSubstitutor?[0;39m - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
-?[36m11:10:59.695?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mo.testcontainers.DockerClientFactory?[0;39m - Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
-?[36m11:10:59.695?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mo.testcontainers.DockerClientFactory?[0;39m - Checking the system...
-?[36m11:10:59.695?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mo.testcontainers.DockerClientFactory?[0;39m - ?? Docker server version should be at least 1.6.0
-?[36m11:10:59.948?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mo.testcontainers.DockerClientFactory?[0;39m - ?? Docker environment should have more than 2GB free disk space
-?[36m11:11:00.046?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mdocker[mysql:8]?[0;39m - Creating container for image: mysql:8
-?[36m11:11:00.267?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mdocker[mysql:8]?[0;39m - Starting container with ID: 0ab048d6656541b57a81cdbf7a9133594622b68065cc7aa0e734d02fabfa7089
-?[36m11:11:00.881?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mdocker[mysql:8]?[0;39m - Container mysql:8 is starting: 0ab048d6656541b57a81cdbf7a9133594622b68065cc7aa0e734d02fabfa7089
-?[36m11:11:00.897?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mdocker[mysql:8]?[0;39m - Waiting for database connection to become available at jdbc:mysql://localhost:60282/test using query 'SELECT 1'
-?[36m11:11:21.111?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mdocker[mysql:8]?[0;39m - Container is started (JDBC URL: jdbc:mysql://localhost:60282/test)
-?[36m11:11:21.111?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mdocker[mysql:8]?[0;39m - Container mysql:8 started in PT21.1583955S
-?[36m11:11:21.138?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mcom.zaxxer.hikari.HikariDataSource?[0;39m - HikariPool-1 - Start completed.
-?[36m11:11:21.157?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35morg.hibernate.Version?[0;39m - HHH000412: Hibernate ORM core version 5.4.24.Final
-?[36m11:11:21.428?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mo.h.annotations.common.Version?[0;39m - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-?[36m11:11:21.625?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35morg.hibernate.dialect.Dialect?[0;39m - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-Request => NovoAutorRequest(nome=Ana Limoeiro, email=ana.limoeiro@zup.com.br, descricao=uma oceanógrafa, cep=69098-302, numero=52)
+?[36m11:47:06.000?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mo.t.utility.ImageNameSubstitutor?[0;39m - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+?[36m11:47:09.316?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mo.testcontainers.DockerClientFactory?[0;39m - Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+?[36m11:47:09.316?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mo.testcontainers.DockerClientFactory?[0;39m - Checking the system...
+?[36m11:47:09.317?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mo.testcontainers.DockerClientFactory?[0;39m - ?? Docker server version should be at least 1.6.0
+?[36m11:47:09.480?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mo.testcontainers.DockerClientFactory?[0;39m - ?? Docker environment should have more than 2GB free disk space
+?[36m11:47:09.602?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mdocker[mysql:8]?[0;39m - Creating container for image: mysql:8
+?[36m11:47:09.797?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mdocker[mysql:8]?[0;39m - Starting container with ID: 8868938043de74b48409307119ed9ab6d3e8a2b12e80cf99dbb413da7ba563c1
+?[36m11:47:10.483?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mdocker[mysql:8]?[0;39m - Container mysql:8 is starting: 8868938043de74b48409307119ed9ab6d3e8a2b12e80cf99dbb413da7ba563c1
+?[36m11:47:10.504?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mdocker[mysql:8]?[0;39m - Waiting for database connection to become available at jdbc:mysql://localhost:55791/test using query 'SELECT 1'
+?[36m11:47:27.756?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mdocker[mysql:8]?[0;39m - Container is started (JDBC URL: jdbc:mysql://localhost:55791/test)
+?[36m11:47:27.756?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mdocker[mysql:8]?[0;39m - Container mysql:8 started in PT18.2701893S
+?[36m11:47:27.782?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mcom.zaxxer.hikari.HikariDataSource?[0;39m - HikariPool-1 - Start completed.
+?[36m11:47:27.806?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35morg.hibernate.Version?[0;39m - HHH000412: Hibernate ORM core version 5.4.24.Final
+?[36m11:47:28.218?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mo.h.annotations.common.Version?[0;39m - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+?[36m11:47:28.454?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35morg.hibernate.dialect.Dialect?[0;39m - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+Request => NovoAutorRequest(nome=Ana Limoeiro, email=ana.limoeiro@zup.com.br, descricao=autora de livro de java, cep=69098-302, numero=52)
 Autor Ana Limoeiro
-?[36m11:11:24.755?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mcom.zaxxer.hikari.HikariDataSource?[0;39m - HikariPool-1 - Shutdown initiated...
-?[36m11:11:25.424?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mcom.zaxxer.hikari.HikariDataSource?[0;39m - HikariPool-1 - Shutdown completed.
+?[36m11:47:32.276?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mcom.zaxxer.hikari.HikariDataSource?[0;39m - HikariPool-1 - Shutdown initiated...
+?[36m11:47:33.703?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mcom.zaxxer.hikari.HikariDataSource?[0;39m - HikariPool-1 - Shutdown completed.
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -42,9 +42,9 @@ class AutorMicronautTest {
     @BeforeEach
     internal fun setup()
     {
-        enderecoResponse = EnderecoResponse("Rua do sol nascente", "Resende", "RJ")
-        val endereco = Endereco(enderecoResponse, "69316-582", "73")
-        autor = Autor("Mauricio Lagos", "mauricio@zup.com.br", "um dentista", endereco)
+        enderecoResponse = EnderecoResponse("Rua Walter Vieiralves", "Manaus", "AM")
+        val endereco = Endereco(enderecoResponse, "52", "69098-302")
+        autor = Autor("Ana Limoeiro", "ana.limoeiro@zup.com.br", "autora de livro de java", endereco)
         autorRepository.save(autor)
     }
 
@@ -72,7 +72,7 @@ class AutorMicronautTest {
     internal fun deveCadastrarUmNovoAutor()
     {
         val novoAutorRequest = NovoAutorRequest("Ana Limoeiro",
-                                                "ana.limoeiro@zup.com.br", "uma oceanógrafa",
+                                                "ana.limoeiro@zup.com.br", "autora de livro de java",
                                                       "69098-302",
                                                        "52"
                                                 )
