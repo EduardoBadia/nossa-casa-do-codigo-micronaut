@@ -1,81 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="br.com.zup.AutorMicronautTest" tests="2" skipped="0" failures="1" errors="0" timestamp="2021-08-13T13:24:14" hostname="ZUP-8051" time="2.11">
+<testsuite name="br.com.zup.AutorMicronautTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-08-13T14:11:22" hostname="ZUP-8051" time="1.979">
   <properties/>
-  <testcase name="deveBuscarUmAutorQuandoUmEmailValidoEhInformado$projeto_exemplo_micronaut()" classname="br.com.zup.AutorMicronautTest" time="1.942"/>
-  <testcase name="deveCadastrarUmNovoAutor$projeto_exemplo_micronaut()" classname="br.com.zup.AutorMicronautTest" time="0.167">
-    <failure message="io.micronaut.http.client.exceptions.HttpClientResponseException: Content Type [application/json] not allowed. Allowed types: [application/xml]" type="io.micronaut.http.client.exceptions.HttpClientResponseException">io.micronaut.http.client.exceptions.HttpClientResponseException: Content Type [application/json] not allowed. Allowed types: [application/xml]
-	at io.micronaut.http.client.netty.DefaultHttpClient$12.channelRead0(DefaultHttpClient.java:2141)
-	at io.micronaut.http.client.netty.DefaultHttpClient$12.channelRead0(DefaultHttpClient.java:2056)
-	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
-	at io.micronaut.http.netty.stream.HttpStreamsHandler.channelRead(HttpStreamsHandler.java:193)
-	at io.micronaut.http.netty.stream.HttpStreamsClientHandler.channelRead(HttpStreamsClientHandler.java:183)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
-	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
-	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
-	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
-	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:324)
-	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:296)
-	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
-	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:286)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
-	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
-	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:831)
-</failure>
-  </testcase>
-  <system-out><![CDATA[?[36m10:23:56.553?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mi.m.context.env.DefaultEnvironment?[0;39m - Established active environments: [test]
-?[36m10:23:57.640?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mcom.zaxxer.hikari.HikariDataSource?[0;39m - HikariPool-1 - Starting...
-?[36m10:23:57.727?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mo.t.d.DockerClientProviderStrategy?[0;39m - Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
-?[36m10:23:58.229?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mo.t.d.DockerClientProviderStrategy?[0;39m - Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
-?[36m10:23:58.231?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mo.testcontainers.DockerClientFactory?[0;39m - Docker host IP address is localhost
-?[36m10:23:58.266?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mo.testcontainers.DockerClientFactory?[0;39m - Connected to docker: 
+  <testcase name="deveBuscarUmAutorQuandoUmEmailValidoEhInformado$projeto_exemplo_micronaut()" classname="br.com.zup.AutorMicronautTest" time="1.783"/>
+  <testcase name="deveCadastrarUmNovoAutor$projeto_exemplo_micronaut()" classname="br.com.zup.AutorMicronautTest" time="0.195"/>
+  <system-out><![CDATA[?[36m11:10:56.513?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mi.m.context.env.DefaultEnvironment?[0;39m - Established active environments: [test]
+?[36m11:10:57.708?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mcom.zaxxer.hikari.HikariDataSource?[0;39m - HikariPool-1 - Starting...
+?[36m11:10:57.780?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mo.t.d.DockerClientProviderStrategy?[0;39m - Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+?[36m11:10:58.273?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mo.t.d.DockerClientProviderStrategy?[0;39m - Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
+?[36m11:10:58.274?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mo.testcontainers.DockerClientFactory?[0;39m - Docker host IP address is localhost
+?[36m11:10:58.310?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mo.testcontainers.DockerClientFactory?[0;39m - Connected to docker: 
   Server Version: 20.10.7
   API Version: 1.41
   Operating System: Docker Desktop
   Total Memory: 12518 MB
-?[36m10:23:58.271?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mo.t.utility.ImageNameSubstitutor?[0;39m - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
-?[36m10:23:59.625?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mo.testcontainers.DockerClientFactory?[0;39m - Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
-?[36m10:23:59.625?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mo.testcontainers.DockerClientFactory?[0;39m - Checking the system...
-?[36m10:23:59.626?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mo.testcontainers.DockerClientFactory?[0;39m - ?? Docker server version should be at least 1.6.0
-?[36m10:23:59.868?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mo.testcontainers.DockerClientFactory?[0;39m - ?? Docker environment should have more than 2GB free disk space
-?[36m10:23:59.954?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mdocker[mysql:8]?[0;39m - Creating container for image: mysql:8
-?[36m10:24:00.105?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mdocker[mysql:8]?[0;39m - Starting container with ID: 6d0f4c0853b293ec9bd0f3534c1c6b5ddad8ae987d608e16f19ededbaede14ad
-?[36m10:24:00.688?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mdocker[mysql:8]?[0;39m - Container mysql:8 is starting: 6d0f4c0853b293ec9bd0f3534c1c6b5ddad8ae987d608e16f19ededbaede14ad
-?[36m10:24:00.706?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mdocker[mysql:8]?[0;39m - Waiting for database connection to become available at jdbc:mysql://localhost:58977/test using query 'SELECT 1'
-?[36m10:24:12.884?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mdocker[mysql:8]?[0;39m - Container is started (JDBC URL: jdbc:mysql://localhost:58977/test)
-?[36m10:24:12.885?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mdocker[mysql:8]?[0;39m - Container mysql:8 started in PT13.0120841S
-?[36m10:24:12.908?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mcom.zaxxer.hikari.HikariDataSource?[0;39m - HikariPool-1 - Start completed.
-?[36m10:24:12.928?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35morg.hibernate.Version?[0;39m - HHH000412: Hibernate ORM core version 5.4.24.Final
-?[36m10:24:13.213?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mo.h.annotations.common.Version?[0;39m - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-?[36m10:24:13.426?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35morg.hibernate.dialect.Dialect?[0;39m - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-?[36m10:24:16.826?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mcom.zaxxer.hikari.HikariDataSource?[0;39m - HikariPool-1 - Shutdown initiated...
-?[36m10:24:17.262?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mcom.zaxxer.hikari.HikariDataSource?[0;39m - HikariPool-1 - Shutdown completed.
+?[36m11:10:58.314?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mo.t.utility.ImageNameSubstitutor?[0;39m - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+?[36m11:10:59.695?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mo.testcontainers.DockerClientFactory?[0;39m - Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+?[36m11:10:59.695?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mo.testcontainers.DockerClientFactory?[0;39m - Checking the system...
+?[36m11:10:59.695?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mo.testcontainers.DockerClientFactory?[0;39m - ?? Docker server version should be at least 1.6.0
+?[36m11:10:59.948?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mo.testcontainers.DockerClientFactory?[0;39m - ?? Docker environment should have more than 2GB free disk space
+?[36m11:11:00.046?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mdocker[mysql:8]?[0;39m - Creating container for image: mysql:8
+?[36m11:11:00.267?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mdocker[mysql:8]?[0;39m - Starting container with ID: 0ab048d6656541b57a81cdbf7a9133594622b68065cc7aa0e734d02fabfa7089
+?[36m11:11:00.881?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mdocker[mysql:8]?[0;39m - Container mysql:8 is starting: 0ab048d6656541b57a81cdbf7a9133594622b68065cc7aa0e734d02fabfa7089
+?[36m11:11:00.897?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mdocker[mysql:8]?[0;39m - Waiting for database connection to become available at jdbc:mysql://localhost:60282/test using query 'SELECT 1'
+?[36m11:11:21.111?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mdocker[mysql:8]?[0;39m - Container is started (JDBC URL: jdbc:mysql://localhost:60282/test)
+?[36m11:11:21.111?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mdocker[mysql:8]?[0;39m - Container mysql:8 started in PT21.1583955S
+?[36m11:11:21.138?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mcom.zaxxer.hikari.HikariDataSource?[0;39m - HikariPool-1 - Start completed.
+?[36m11:11:21.157?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35morg.hibernate.Version?[0;39m - HHH000412: Hibernate ORM core version 5.4.24.Final
+?[36m11:11:21.428?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mo.h.annotations.common.Version?[0;39m - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+?[36m11:11:21.625?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35morg.hibernate.dialect.Dialect?[0;39m - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+Request => NovoAutorRequest(nome=Ana Limoeiro, email=ana.limoeiro@zup.com.br, descricao=uma oceanógrafa, cep=69098-302, numero=52)
+Autor Ana Limoeiro
+?[36m11:11:24.755?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mcom.zaxxer.hikari.HikariDataSource?[0;39m - HikariPool-1 - Shutdown initiated...
+?[36m11:11:25.424?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mcom.zaxxer.hikari.HikariDataSource?[0;39m - HikariPool-1 - Shutdown completed.
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

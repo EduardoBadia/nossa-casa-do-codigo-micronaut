@@ -25,7 +25,7 @@ class AutorController(val autorRepository: AutorRepository,
         return HttpResponse.ok(resposta)
     }
 
-    @Post(produces = [MediaType.APPLICATION_XML], consumes = [MediaType.APPLICATION_XML])
+    @Post
     @Transactional
     fun cadastra(@Body @Valid request: NovoAutorRequest) : HttpResponse<Any>
     {

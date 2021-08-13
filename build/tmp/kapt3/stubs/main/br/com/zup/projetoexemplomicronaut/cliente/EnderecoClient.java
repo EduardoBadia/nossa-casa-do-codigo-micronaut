@@ -7,7 +7,7 @@ import java.lang.System;
 public abstract interface EnderecoClient {
     
     @org.jetbrains.annotations.NotNull
-    @io.micronaut.http.annotation.Get(value = "/{cep}/xml", consumes = {"application/xml"}, produces = {"application/xml"})
+    @io.micronaut.http.annotation.Get(value = "/{cep}/json")
     public abstract io.micronaut.http.HttpResponse<br.com.zup.projetoexemplomicronaut.controller.response.EnderecoResponse> consulta(@org.jetbrains.annotations.NotNull
     @io.micronaut.http.annotation.PathVariable
     java.lang.String cep);
